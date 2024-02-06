@@ -8,9 +8,7 @@ export default async function handle(req, res) {
 
   // console.log('experimental products', experimentalProducts);
 
-  const pString = prisma;
+  const result = await prisma.products.findMany()
 
-  const products = await "Replace this with database items";
-  // res.json(products);
-  res.json(prisma);
+  res.json(result);
 }
