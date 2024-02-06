@@ -10,7 +10,7 @@ export default async function handle(req, res) {
 
   const pString = prisma;
 
-  const products = await "Replace this with database items";
+  // const products = await "Replace this with database items";
   // res.json(products);
   res.json(prisma);
 }
